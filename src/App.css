@@ -1,0 +1,28 @@
+
+*{
+
+}
+.App {
+ 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ 
+  
+
+}
+.box{
+  width:400px;
+  
+  
+}
+
+img{
+  width: 50%;
+}
+Form{
+  border: 5px solid rgb(139, 80, 139);
+  border-radius: 5px;
+  box-shadow: 4px gray;
+  padding: 5px;
+}
