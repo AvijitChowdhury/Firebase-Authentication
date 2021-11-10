@@ -164,7 +164,7 @@ const provider = new GoogleAuthProvider();
     //signed in
     if(!newUser && user.Email && user.Password){
       const auth = getAuth();
-      signInWithEmailAndPassword(auth, user.email, user.password)
+      signInWithEmailAndPassword(auth, user.Email, user.Password)
         .then((userCredential) => {
           // Signed in 
           const user = userCredential.user;
@@ -203,10 +203,12 @@ const provider = new GoogleAuthProvider();
 
   return (
     <div className="App">
+      <br />
       {
         user.isSignedIn ?<Button variant="info" onClick={()=>signOutButton()}>Sign Out</Button>
         :<Button variant="info" onClick={()=>handleClicked()}>Sign In</Button>
       }
+      <br />
       <Button onClick={handleFbSignIn}>Sign In Using Facebook</Button>
       {
           user.isSignedIn&&
